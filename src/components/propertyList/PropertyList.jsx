@@ -2,7 +2,7 @@ import useFetch from "../../hooks/useFetch";
 import "./propertyList.css";
 
 const PropertyList = () => {
-  const { data, loading, error } = useFetch("/api/hotels/countByType");
+  const { data, loading, error } = useFetch("https://backend-ui-2.onrender.com/api/hotels/countByType");
 
   const images = [
     "https://media.istockphoto.com/id/1414156193/photo/modern-college-dorm-room-with-cardboard-boxes-and-luggages.jpg?s=1024x1024&w=is&k=20&c=2laIosZtlRagi815gCqjTmYBkoKgV-GX_TLrJcF0TFM=",
