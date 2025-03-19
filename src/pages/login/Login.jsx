@@ -53,7 +53,12 @@ const Login = () => {
           Login
         </button>
         {error && <span>{error.message}</span>}
+        <div>
+        <br />
+        <p>Click the login button to go to the homepage for security purpose .</p>
       </div>
+      </div>
+      
     </div>
   );
 };

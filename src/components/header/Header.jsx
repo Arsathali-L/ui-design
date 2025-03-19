@@ -99,7 +99,7 @@ const Header = ({ type }) => {
             <p className="headerhigh">"Make sure don't use capitel lettor in the creating word!"</p>
             {!user && <button className="headerBtn">Sign in / Register</button>}
             <div className="headerSearch">
-              <div className="headerSearchItem">
+              {/* <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faBed} className="headerIcon" />
                 <input
                   type="text"
@@ -107,7 +107,21 @@ const Header = ({ type }) => {
                   className="headerSearchInput"
                   onChange={(e) => setDestination(e.target.value)}
                 />
+              </div> */}
+              <div className="headerSearchItem">
+                <FontAwesomeIcon icon={faBed} className="headerIcon" />
+                <select
+                  className="headerSearchInput"
+                  onChange={(e) => setDestination(e.target.value)}>
+                    
+                  <option value="">Select a destination</option>
+                  <option value="coimbatore">Coimbatore</option>
+                  <option value="bangalore">Bangalore</option>
+                  <option value="chennai">Chennai</option>
+      
+                </select>
               </div>
+
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
                 <span
