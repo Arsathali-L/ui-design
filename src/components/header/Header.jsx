@@ -93,12 +93,12 @@ const Header = ({ type }) => {
               more with a free Arsh booking account
             </p>
             
-            {!user && <button className="headerBtn">Sign in / Register</button>}
+            {!user && <button className="headerBtn">Sign in / Register (if login complete it will disappear)</button>}
             <div className="headerSearch">
               
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faBed} className="headerIcon" />
-                <select
+                {/* <select
                   className="headerSearchInput"
                   onChange={(e) => setDestination(e.target.value)}>
                     
@@ -107,7 +107,21 @@ const Header = ({ type }) => {
                   <option value="bangalore">Bangalore</option>
                   <option value="chennai">Chennai</option>
       
-                </select>
+                </select> */}
+                <input
+                  type="text"
+                  className="headerSearchInput"
+                  placeholder="Enter or select a destination"
+                  list="destinations"
+                  onChange={(e) => setDestination(e.target.value)}
+                />
+
+                <datalist id="destinations">
+                  <option value="coimbatore" />
+                  <option value="bangalore" />
+                  <option value="chennai" />
+                </datalist>
+
               </div>
 
               <div className="headerSearchItem">
