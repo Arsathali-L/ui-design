@@ -23,3 +23,6 @@ then you register your detail it move to login page done your login after it mov
 finally you click the reserve it move to home page 
 
 that is my project! working steps.
+
+
+in my booking page i use newly payment method like stripe
